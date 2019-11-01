@@ -53,4 +53,25 @@ int main()
 
 
 《可并堆》
+#include <bits/stdc++.h>
+#include <ext/pb_ds/priority_queue.hpp>
+using namespace std;
+using namespace __gnu_pbds;
+typedef __gnu_pbds::priority_queue <pair<int, int>, greater<pair<int, int> >, pairing_heap_tag> heap;
+heap q;
+提供以下函数：：
 
+priority_queue()默认构造函数
+priority_queue(const priority_queue &other) 用另一个优先队列来构造
+size()用法同std
+empty()用法同std
+push(const_reference r_val)注意push返回point_iterator
+top()没区别…
+pop()没什么好说的
+point_iterator对应某元素的迭代器
+erase(point_iterator it)删除对应点
+modify(point_iterator it,const_reference r_new_val)修改对应点的值(这是优化dijkstra神方法,均摊复杂度O(1))
+clear()基本没什么用,还不如重新定义一个…
+join(priority_queue &other)神方法*2,白送可并堆啊,还是O(1)的,注意合并后other会被清空
+split(Pred prd,priority_queue &other)拆分,但好像没什么用
+其他迭代器同std
