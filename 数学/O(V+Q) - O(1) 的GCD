@@ -1,0 +1,4 @@
+源自：https://www.mina.moe/archives/12920
+例题：https://www.luogu.org/problem/P5435    （5000范围内的数字所有两两组合的GCD）
+
+尽可能使用小于 cuberoot(x) 的因子分解 x ，当然常常未必做得到
